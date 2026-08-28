@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Netlify usually auto-detects Next.js and installs this, but declaring it
+# explicitly makes the build reproducible instead of relying on detection.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
